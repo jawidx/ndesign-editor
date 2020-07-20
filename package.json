@@ -1,0 +1,24 @@
+{
+    "name": "ndesign-editor",
+    "version": "0.0.1",
+    "description": "ndesign-editor",
+    "main": "./lib/index.js",
+    "scripts": {
+        "tsc": "tsc"
+    },
+    "keywords": [
+        "ndesign-editor"
+    ],
+    "author": "jawidx",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jawidx/ndesign-editor.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jawidx/ndesign-editor/issues"
+    },
+    "homepage": "https://github.com/jawidx/ndesign-editor#readme",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {}
+}

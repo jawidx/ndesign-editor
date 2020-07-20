@@ -1,0 +1,43 @@
+& {}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: #f8f8f88f;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    &__label {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        width: 50px;
+        justify-content: flex-end;
+    }
+
+    &__input {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 1;
+        width: 0;
+        flex-direction: column
+    }
+    &__second{
+        display: flex;
+        &.buttonGroup{
+            margin-top: 10px;
+        }
+        .input-container{
+            // display: flex;
+            &:first-child{
+                margin-right: 5px;
+            }
+            justify-content: center;
+            align-content: center;
+            .input-container-label{
+                margin-right: 5px;
+                color: #d9d9d9;
+            }
+        }
+    }
+}

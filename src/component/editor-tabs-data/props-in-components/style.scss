@@ -1,0 +1,9 @@
+.props-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    .title {
+        flex: 1;
+    }
+}

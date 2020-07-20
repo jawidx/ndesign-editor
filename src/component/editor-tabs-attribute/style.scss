@@ -1,0 +1,96 @@
+.header-container {
+    display: flex;
+
+    &__icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        font-size: 20px;
+    }
+
+    &__title-container {
+        display: flex;
+        flex-grow: 2;
+        width: 0;
+        align-items: center;
+
+        .ant-input {
+            border: none;
+            margin: 0 4px;
+            height: auto;
+        }
+    }
+
+    &__operate-container {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+        width: 0;
+        align-items: center;
+
+        .ant-btn-group {
+            display: flex;
+
+            .anticon {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.child-scale {
+    i {
+        transition: transform .3s;
+    }
+
+    &:hover {
+        i {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.container__title {
+    display: flex;
+    height: 43px;
+    align-items: center;
+    padding: 0 10px;
+    margin: 12px 0;
+    background-color: whitesmoke;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: 2px solid #d9d9d9;
+    .ti{
+        display: flex;
+        flex: 1;
+    }
+}
+
+.ant-collapse-content {
+    padding: 0;
+}
+
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container {
+    height: auto;
+    .ant-tabs-tab{
+        padding: 0px 10px;
+        .anticon-close{
+            margin-top: 0px;
+            top: -1px;
+            right: -2px
+        }
+    }
+    .defaultStyleIcon {
+        display: none;
+    }
+
+    .defaultStyle {
+        .defaultStyleIcon {
+            display: inline-block;
+            margin-right: 3px;
+        }
+
+        color: #ff9100;
+    }
+}

@@ -1,0 +1,130 @@
+& {
+    // overflow-y: scroll;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: left;
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+.componentsListBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comboComListBox {
+    flex-direction: column;
+    .componentlistDraggableItem {
+        display: flex;
+        flex-basis: auto;
+        width: auto;
+        margin: 0 11px;
+        border-right: none;
+        align-items: center;    
+        padding: 0;
+        .componentListDragHandle {
+            display: flex;
+            flex: 1;
+            padding: 15px 0;
+        }
+
+        &__itemIconBox {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__itemIcon {
+            font-size: 30px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        &__info {
+            opacity: 0.6;
+            text-align: left;
+            padding: 0 6px;
+            opacity: 1;
+            font-size: 14px;
+            padding-left: 8px;
+        }
+
+        &__infoPub {
+            color: #cecece;
+            font-size: 12px;
+        }
+
+        &:hover {
+            background-color: white;
+        }
+
+    }
+}
+
+.componentlistDraggableItem {
+    flex-basis: (100% / 3);
+    width: auto;
+
+    &:nth-child(3n+0) {
+        // border-top: 1px solid #ddd;
+        border-right: none;
+    }
+}
+
+.ant-collapse-content {
+    padding: 0;
+
+    & > .ant-collapse-content-box {
+        padding-top: 0;
+    }
+}
+
+._global {
+    .componentListDragHandle {
+        cursor: move;
+    }
+
+    .componentlistDraggableItem {
+        // flex-basis: (100% / 3);
+        width: 80px;
+        overflow: hidden;
+        box-sizing: border-box;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        background-color: #fff;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: whitesmoke;
+        }
+
+        &:not(:first-child) {
+            // border-top: 1px solid #ddd;
+       
+        }
+
+        &__itemIconBox {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__itemIcon {
+            font-size: 30px;
+            width: 30px;
+        }
+
+        &__info {
+            text-align: center;
+            opacity: 0.6;
+        }
+    }
+}

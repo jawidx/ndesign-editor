@@ -1,0 +1,28 @@
+&{
+    width: 100%
+}
+
+&.specTypeProps{
+    display: flex;
+
+    .editorInput{
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        height: 32px;
+    }
+    .ant-select-selection--single{
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-right: none;
+    }
+}
+
+.specTypeProps{
+    &__select{
+        height: 32px;
+    }
+    &__editorInput{
+        flex: 1;
+        overflow: auto
+    }
+}

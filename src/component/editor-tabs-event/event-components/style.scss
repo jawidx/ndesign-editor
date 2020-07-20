@@ -1,0 +1,123 @@
+$sync: (color: #1890ff, background: #e6f7ff, border-color: #91d5ff);
+$async_resolve: (color: #52c41a, background: #f6ffed, border-color: #b7eb8f);
+$async_reject: (color: #f5222d, background: #fff1f0, border-color: #ffa39e);
+$async_finally: (color: #fa8c16, background: #fff7e6, border-color: #ffd591);
+$color: (sync: $sync, async_resolve: $async_resolve, async_reject: $async_reject, async_finally: $async_finally);
+
+& {
+    padding: 18px;
+    border: 1px solid #f3f3f3;
+}
+
+.addNewBtn{
+    margin: 10px  0;
+}
+
+.eventActionList {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+
+    &__listitem {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            > .topLineShdow {
+                justify-content: flex-end;
+            }
+        }
+
+        > .topLineShdow {
+            display: flex;
+            width: 100%;
+            height: 2px;
+            margin-top: -2px;
+
+            .inner {
+                width: 50%;
+                height: 100%;
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__itemasync {
+        width: 2px;
+        height: 50px;
+        background-color: map-get($sync, "border-color");
+
+        @each $prop in "sync", "async_resolve", "async_reject", "async_finally" {
+            &.#{$prop} {
+                background-color: map-get($map: map-get($color, #{$prop}), $key: "border-color");
+            }
+        }
+    }
+
+    &__itemasyncIcon {
+        margin: -3px 0;
+
+        @each $prop in "sync", "async_resolve", "async_reject", "async_finally" {
+            &.#{$prop} {
+                color: map-get($map: map-get($color, #{$prop}), $key: "border-color");
+            }
+        }
+    }
+
+    &__iteminfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #f3f3f3;
+
+        // background-color: #f3f3f3;
+        cursor: pointer;
+
+        @each $prop in "sync", "async_resolve", "async_reject", "async_finally" {
+            &.#{$prop} {
+                color: map-get($map: map-get($color, #{$prop}), $key: "color");
+                background: map-get($map: map-get($color, #{$prop}), $key: "background");
+                border-color: map-get($map: map-get($color, #{$prop}), $key: "border-color");
+            }
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__topline {
+        width: 100%;
+        height: 2px;
+        background-color: #8a8a8a;
+    }
+
+    &__topVerticalLine {
+        width: 2px;
+        height: 30px;
+        background-color: #8a8a8a;
+    }
+}
+
+.ant-form-item {
+    margin-bottom: 15px;
+}

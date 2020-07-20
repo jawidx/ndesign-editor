@@ -1,0 +1,89 @@
+& {
+    width: 100%;
+}
+
+.editorInput {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    padding: 0px 7px;
+    height: 28px;
+    border-radius: 4px;
+    overflow: auto;
+
+    &__item {
+        white-space: nowrap;
+    }
+
+    &__api {
+        color: #108ee9;
+        background: #d2eafb;
+        border-color: #d2eafb;
+    }
+
+    &__gbData {
+        color: #00a854;
+        background: #cfefdf;
+        border-color: #cfefdf;
+    }
+
+    &__comSource {
+        color: #7265e6;
+        background: #e4e2fa;
+        border-color: #e4e2fa;
+    }
+
+    &__inSource {
+        color: #f56a00;
+        background: #fde3cf;
+        border-color: #fde3cf;
+    }
+
+    &:focus {
+        border-color: #49a9ee;
+        outline: 0;
+        box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+    }
+
+    &__variable {
+        padding: 3px;
+        border-radius: 4px;
+        margin: 0 5px;
+        cursor: move;
+    }
+
+    &__space {
+        padding: 5px;
+        line-height: 0;
+    }
+
+    &::-webkit-scrollbar { /*滚动条整体样式*/
+        width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    &::-webkit-scrollbar-track { /*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
+
+&.specTypeProps {
+    display: flex;
+
+    &__select {
+        height: 32px;
+    }
+}

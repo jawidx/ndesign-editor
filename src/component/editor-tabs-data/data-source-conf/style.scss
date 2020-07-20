@@ -1,0 +1,42 @@
+& {}
+
+.item-list-contain {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    .item-list {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        align-items: center;
+
+        .desc {
+            flex: 1;
+        }
+        .sourceId{
+            padding: 3px 5px;
+            margin: 0 3px;
+            border-radius: 4px;
+            color: #7265e6;
+            background: #e4e2fa;
+            border-color: #e4e2fa;
+        }
+        .opreate-icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .icon {
+                cursor: pointer;
+                color: #999;
+                padding: 5px;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+.ant-input-group-wrapper{
+    width: 100%
+}

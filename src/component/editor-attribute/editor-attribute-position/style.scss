@@ -1,0 +1,106 @@
+& {
+    padding: 10px;
+}
+
+.absolute-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.position-control-container {
+    position: relative;
+    width: 0;
+    height: 65px;
+    display: flex;
+    flex-grow: 2;
+}
+
+.left-top, .left-bottom, .right-top, .right-bottom {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 0 0;
+    text-align: center;
+}
+
+.left-top, .left-bottom {
+    left: 0;
+}
+
+.right-top, .right-bottom {
+    left: 35px;
+}
+
+.left-top, .right-top {
+    top: 0;
+}
+
+.left-bottom, .right-bottom {
+    top: 35px;
+}
+
+.left-top {
+    .icon {
+        transform: rotate(-90deg);
+    }
+}
+
+// .right-top {
+//     .icon {
+//     }
+// }
+
+.right-bottom {
+    .icon {
+        transform: rotate(90deg);
+    }
+}
+
+.left-bottom {
+    .icon {
+        transform: rotate(180deg);
+    }
+}
+
+.position-number-container {
+    display: flex;
+    flex-grow: 5;
+    width: 0;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .svg-icon {
+        height: 13px
+    }
+
+    .positionLeft{
+
+    }
+    .positionTop{
+        &.svg-icon{
+            transform: rotate(90deg);
+        }
+    }
+    .positionRight{
+        &.svg-icon{
+            transform: rotate(180deg);
+        }
+    }
+    .positionBottom{
+        &.svg-icon{
+            transform: rotate(270deg);
+        }
+    }
+}
+
+// reset button
+.text-child {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+}

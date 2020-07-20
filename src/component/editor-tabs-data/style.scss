@@ -1,0 +1,8 @@
+& {}
+
+.ant-collapse-item {
+    opacity: 0.5;
+    &.ant-collapse-item-active {
+        opacity: 1
+    }
+}

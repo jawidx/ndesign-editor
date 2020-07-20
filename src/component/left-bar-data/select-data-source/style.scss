@@ -1,0 +1,40 @@
+&{
+    display: inline-block
+}
+.json-field {
+    font-size: 14px;
+}
+
+.tag-id {
+    margin-left: 5px;
+}
+
+.sourceTitle{
+    display: flex;
+    &__item{
+        padding: 0 6px;
+        color: #ffffff;
+        background: #e4e4e4;
+        margin: 0 3px;
+        border-radius: 3px;
+        opacity: 0.5;
+        &_active{
+            &.api{
+                background-color: #108ee9;
+            }
+            &.gbData{
+                background-color: #00a854;
+            }
+            &.comSource{
+                background-color: #7265e6;
+            }
+            &.inSource{
+                background-color: #f56a00;
+            }
+            &.other{
+                background-color: #13c2c2;
+            }
+            // background: rgb(135, 208, 104);
+        }
+    }
+}

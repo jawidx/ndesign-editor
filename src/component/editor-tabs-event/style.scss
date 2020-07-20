@@ -1,0 +1,24 @@
+& {
+    padding: 10px;
+}
+
+.tablelist__operateBtn{
+    display: flex;
+    justify-content: space-around
+}
+
+.close-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    width: 20px;
+    color: #999;
+    cursor: pointer;
+    &:hover {
+        color: #333;
+    }
+}
+
+.text-child {
+    padding: 0 10px !important;
+}

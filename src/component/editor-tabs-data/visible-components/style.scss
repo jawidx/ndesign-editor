@@ -1,0 +1,34 @@
+& {}
+
+.item-list-contain {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    .item-list {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        align-items: center;
+
+        .desc {
+            flex: 1;
+        }
+        .opreate-icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .icon {
+                cursor: pointer;
+                color: #999;
+                padding: 5px;
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+.ant-input-group-wrapper{
+    width: 100%
+}

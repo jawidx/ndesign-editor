@@ -1,0 +1,9 @@
+& {
+    &.selected {
+        outline: 2px solid #CCC;
+        z-index: 9;
+    }
+    .sortable-ghost{
+        will-change: transform
+    }
+}

@@ -1,0 +1,16 @@
+& {}
+
+.ant-form-item {
+    margin-bottom: 15px;
+}
+
+.condition {
+    &__itemTag {
+        height: 28px;
+        line-height: 28px;
+    }
+}
+
+// .eventDataEditor{
+//     padding: 0 15px
+// }
